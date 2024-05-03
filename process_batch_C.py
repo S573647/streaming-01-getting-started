@@ -32,7 +32,7 @@ OUTPUT_FILE_NAME = "batchfile_3_farenheit.csv"
 # Define program functions (bits of reusable code)
 # Use docstrings - and indentation matters!
 
-
+# function to convert kelvin to Fahrenheit and return the value
 def convert_k_to_f(temp_k):
 
     """Convert Kelvin to Fahrenheit .
@@ -45,7 +45,7 @@ def convert_k_to_f(temp_k):
     logging.debug(f"Converted {temp_k}F to {fahrenheit}F.")    
     return fahrenheit
 
-
+# process each record in the input file and write to output file
 def process_rows(input_file_name, output_file_name):
     """Read from input file, convert temperature, and write to output file."""
     logging.info(f"Calling process_rows(): {input_file_name} to {output_file_name}.")
